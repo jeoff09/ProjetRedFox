@@ -56,7 +56,11 @@ public class Accueil extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jButtonModifierJeu = new javax.swing.JButton();
         jTextField3 = new javax.swing.JTextField();
+        jPanelGestionJoueur = new javax.swing.JPanel();
+        jPanelGestionAdherent = new javax.swing.JPanel();
         jPanelGestionAdministrateurs = new javax.swing.JPanel();
+        jPanelGestionUtilisateur = new javax.swing.JPanel();
+        jPanelGestionResultat = new javax.swing.JPanel();
         jPanelGestionDesEquipes = new javax.swing.JPanel();
         jPanelGestionAdhesions = new javax.swing.JPanel();
         jPanelGestionMatch = new javax.swing.JPanel();
@@ -245,6 +249,32 @@ public class Accueil extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jPanelGestionJoueur.setBackground(new java.awt.Color(51, 255, 153));
+
+        javax.swing.GroupLayout jPanelGestionJoueurLayout = new javax.swing.GroupLayout(jPanelGestionJoueur);
+        jPanelGestionJoueur.setLayout(jPanelGestionJoueurLayout);
+        jPanelGestionJoueurLayout.setHorizontalGroup(
+            jPanelGestionJoueurLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 737, Short.MAX_VALUE)
+        );
+        jPanelGestionJoueurLayout.setVerticalGroup(
+            jPanelGestionJoueurLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 339, Short.MAX_VALUE)
+        );
+
+        jPanelGestionAdherent.setBackground(new java.awt.Color(255, 255, 153));
+
+        javax.swing.GroupLayout jPanelGestionAdherentLayout = new javax.swing.GroupLayout(jPanelGestionAdherent);
+        jPanelGestionAdherent.setLayout(jPanelGestionAdherentLayout);
+        jPanelGestionAdherentLayout.setHorizontalGroup(
+            jPanelGestionAdherentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 671, Short.MAX_VALUE)
+        );
+        jPanelGestionAdherentLayout.setVerticalGroup(
+            jPanelGestionAdherentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 296, Short.MAX_VALUE)
+        );
+
         jPanelGestionAdministrateurs.setBackground(new java.awt.Color(153, 255, 102));
 
         javax.swing.GroupLayout jPanelGestionAdministrateursLayout = new javax.swing.GroupLayout(jPanelGestionAdministrateurs);
@@ -256,6 +286,32 @@ public class Accueil extends javax.swing.JFrame {
         jPanelGestionAdministrateursLayout.setVerticalGroup(
             jPanelGestionAdministrateursLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 351, Short.MAX_VALUE)
+        );
+
+        jPanelGestionUtilisateur.setBackground(new java.awt.Color(102, 51, 0));
+
+        javax.swing.GroupLayout jPanelGestionUtilisateurLayout = new javax.swing.GroupLayout(jPanelGestionUtilisateur);
+        jPanelGestionUtilisateur.setLayout(jPanelGestionUtilisateurLayout);
+        jPanelGestionUtilisateurLayout.setHorizontalGroup(
+            jPanelGestionUtilisateurLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 679, Short.MAX_VALUE)
+        );
+        jPanelGestionUtilisateurLayout.setVerticalGroup(
+            jPanelGestionUtilisateurLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 339, Short.MAX_VALUE)
+        );
+
+        jPanelGestionResultat.setBackground(new java.awt.Color(51, 153, 0));
+
+        javax.swing.GroupLayout jPanelGestionResultatLayout = new javax.swing.GroupLayout(jPanelGestionResultat);
+        jPanelGestionResultat.setLayout(jPanelGestionResultatLayout);
+        jPanelGestionResultatLayout.setHorizontalGroup(
+            jPanelGestionResultatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 702, Short.MAX_VALUE)
+        );
+        jPanelGestionResultatLayout.setVerticalGroup(
+            jPanelGestionResultatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 342, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanelGestionDesEquipesLayout = new javax.swing.GroupLayout(jPanelGestionDesEquipes);
@@ -306,6 +362,11 @@ public class Accueil extends javax.swing.JFrame {
         jMenuBar1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0), 2));
 
         jMenuAccueil.setText("Accueil");
+        jMenuAccueil.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenuAccueilMouseClicked(evt);
+            }
+        });
         jMenuAccueil.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 RetourAccueil(evt);
@@ -314,31 +375,36 @@ public class Accueil extends javax.swing.JFrame {
         jMenuBar1.add(jMenuAccueil);
 
         jMenuGestionUnilan.setText("Gestion de Unilan");
-        jMenuGestionUnilan.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuGestionUnilanActionPerformed(evt);
-            }
-        });
 
         jMenuGestionDesUtilisateurs.setText("Gestion des Utilisateurs");
 
         jMenuItemAdherent.setText("Adhérents");
+        jMenuItemAdherent.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemAdherentActionPerformed(evt);
+            }
+        });
         jMenuGestionDesUtilisateurs.add(jMenuItemAdherent);
 
         jMenuItemUtilisateurs.setText("Utilisateurs");
+        jMenuItemUtilisateurs.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemUtilisateursActionPerformed(evt);
+            }
+        });
         jMenuGestionDesUtilisateurs.add(jMenuItemUtilisateurs);
 
         jMenuItemGestionJoueurs.setText("Joueurs");
+        jMenuItemGestionJoueurs.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemGestionJoueursActionPerformed(evt);
+            }
+        });
         jMenuGestionDesUtilisateurs.add(jMenuItemGestionJoueurs);
 
         jMenuGestionUnilan.add(jMenuGestionDesUtilisateurs);
 
         jMenuItemGestionDesJeux.setText("Gestion des Jeux");
-        jMenuItemGestionDesJeux.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jMenuItemGestionDesJeuxMouseClicked(evt);
-            }
-        });
         jMenuItemGestionDesJeux.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItemGestionDesJeuxActionPerformed(evt);
@@ -383,14 +449,29 @@ public class Accueil extends javax.swing.JFrame {
         jMenuGestionRedfox.add(jMenuItemGestionEquipe);
 
         jMenuItemGestionRésultats.setText("Gestion des Résultats");
+        jMenuItemGestionRésultats.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemGestionRésultatsActionPerformed(evt);
+            }
+        });
         jMenuGestionRedfox.add(jMenuItemGestionRésultats);
 
         jMenuBar1.add(jMenuGestionRedfox);
 
         jMenuAlarmes.setText("Notifications");
+        jMenuAlarmes.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MouseClickAlarme(evt);
+            }
+        });
         jMenuBar1.add(jMenuAlarmes);
 
         jMenuAide.setText("Aide");
+        jMenuAide.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenuAideMouseClicked(evt);
+            }
+        });
         jMenuBar1.add(jMenuAide);
 
         setJMenuBar(jMenuBar1);
@@ -399,11 +480,11 @@ public class Accueil extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanelPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanelPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 683, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanelPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanelPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 329, Short.MAX_VALUE)
         );
 
         pack();
@@ -430,14 +511,6 @@ public class Accueil extends javax.swing.JFrame {
         jPanelPrincipal.invalidate();
 
     }//GEN-LAST:event_jMenuItemGestionDesJeuxActionPerformed
-
-    private void jMenuGestionUnilanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuGestionUnilanActionPerformed
-      
-    }//GEN-LAST:event_jMenuGestionUnilanActionPerformed
-
-    private void jMenuItemGestionDesJeuxMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenuItemGestionDesJeuxMouseClicked
-
-    }//GEN-LAST:event_jMenuItemGestionDesJeuxMouseClicked
 
     private void RetourAccueil(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RetourAccueil
         
@@ -479,6 +552,64 @@ public class Accueil extends javax.swing.JFrame {
         jPanelPrincipal.add(currentPanel, BorderLayout.CENTER);
         jPanelPrincipal.invalidate();
     }//GEN-LAST:event_jMenuItemGestionEquipeActionPerformed
+
+    private void jMenuItemAdherentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemAdherentActionPerformed
+        if(currentPanel != null)
+        jPanelPrincipal.remove(currentPanel);
+        
+        currentPanel = this.jPanelGestionAdherent;
+        jPanelPrincipal.add(currentPanel, BorderLayout.CENTER);
+        jPanelPrincipal.invalidate();
+    }//GEN-LAST:event_jMenuItemAdherentActionPerformed
+
+    private void jMenuItemUtilisateursActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemUtilisateursActionPerformed
+        if(currentPanel != null)
+        jPanelPrincipal.remove(currentPanel);
+        
+        currentPanel = this.jPanelGestionUtilisateur;
+        jPanelPrincipal.add(currentPanel, BorderLayout.CENTER);
+        jPanelPrincipal.invalidate();
+    }//GEN-LAST:event_jMenuItemUtilisateursActionPerformed
+
+    private void jMenuItemGestionJoueursActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemGestionJoueursActionPerformed
+         if(currentPanel != null)
+        jPanelPrincipal.remove(currentPanel);
+        
+        currentPanel = this.jPanelGestionJoueur;
+        jPanelPrincipal.add(currentPanel, BorderLayout.CENTER);
+        jPanelPrincipal.invalidate();
+                                       
+    }//GEN-LAST:event_jMenuItemGestionJoueursActionPerformed
+
+    private void jMenuItemGestionRésultatsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemGestionRésultatsActionPerformed
+        if(currentPanel != null)
+        jPanelPrincipal.remove(currentPanel);
+        
+        currentPanel = this.jPanelGestionResultat;
+        jPanelPrincipal.add(currentPanel, BorderLayout.CENTER);
+        jPanelPrincipal.invalidate();
+    }//GEN-LAST:event_jMenuItemGestionRésultatsActionPerformed
+
+    private void jMenuAccueilMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenuAccueilMouseClicked
+        if(currentPanel != null)
+        jPanelPrincipal.remove(currentPanel);
+        
+        
+        currentPanel = this.jPanelPrincipal;
+        jPanelPrincipal.add(currentPanel, BorderLayout.CENTER);
+        jPanelPrincipal.invalidate();
+        
+    }//GEN-LAST:event_jMenuAccueilMouseClicked
+
+    private void jMenuAideMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenuAideMouseClicked
+        Aide.Aide aide = new Aide.Aide();
+        aide.show();
+    }//GEN-LAST:event_jMenuAideMouseClicked
+
+    private void MouseClickAlarme(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MouseClickAlarme
+        notifications.Notifications notif = new notifications.Notifications();
+        notif.show();
+    }//GEN-LAST:event_MouseClickAlarme
 
     /**
      * @param args the command line arguments
@@ -543,11 +674,15 @@ public class Accueil extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItemMatch;
     private javax.swing.JMenuItem jMenuItemUtilisateurs;
     private javax.swing.JPanel jPanelAjoutJeu;
+    private javax.swing.JPanel jPanelGestionAdherent;
     private javax.swing.JPanel jPanelGestionAdhesions;
     private javax.swing.JPanel jPanelGestionAdministrateurs;
     private javax.swing.JPanel jPanelGestionDesEquipes;
     private javax.swing.JPanel jPanelGestionDesjeux;
+    private javax.swing.JPanel jPanelGestionJoueur;
     private javax.swing.JPanel jPanelGestionMatch;
+    private javax.swing.JPanel jPanelGestionResultat;
+    private javax.swing.JPanel jPanelGestionUtilisateur;
     private javax.swing.JPanel jPanelModificationJeux;
     private javax.swing.JPanel jPanelPrincipal;
     private javax.swing.JPanel jPanelSuppresionJeu;
