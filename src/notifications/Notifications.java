@@ -27,15 +27,34 @@ public class Notifications extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanelGestionDesAlarmesAdhésions = new javax.swing.JPanel();
+
+        javax.swing.GroupLayout jPanelGestionDesAlarmesAdhésionsLayout = new javax.swing.GroupLayout(jPanelGestionDesAlarmesAdhésions);
+        jPanelGestionDesAlarmesAdhésions.setLayout(jPanelGestionDesAlarmesAdhésionsLayout);
+        jPanelGestionDesAlarmesAdhésionsLayout.setHorizontalGroup(
+            jPanelGestionDesAlarmesAdhésionsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 706, Short.MAX_VALUE)
+        );
+        jPanelGestionDesAlarmesAdhésionsLayout.setVerticalGroup(
+            jPanelGestionDesAlarmesAdhésionsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 441, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 711, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(0, 2, Short.MAX_VALUE)
+                .addComponent(jPanelGestionDesAlarmesAdhésions, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 3, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 383, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(0, 19, Short.MAX_VALUE)
+                .addComponent(jPanelGestionDesAlarmesAdhésions, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 20, Short.MAX_VALUE))
         );
 
         pack();
@@ -77,5 +96,6 @@ public class Notifications extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel jPanelGestionDesAlarmesAdhésions;
     // End of variables declaration//GEN-END:variables
 }

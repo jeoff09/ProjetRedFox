@@ -28,37 +28,261 @@ public class Aide extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanelAccueilAide = new javax.swing.JPanel();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jPanelDescriptionAide = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jPanelGesionUnilan = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jButtonAideGestionUtilisateur = new javax.swing.JButton();
+        jButtonAideGestionAdmin = new javax.swing.JButton();
+        jButtonAideGestionJeux = new javax.swing.JButton();
+        jButtonAideAdhésions = new javax.swing.JButton();
+        jPanelGestionRedfox = new javax.swing.JPanel();
+        jPanelGestionNotifications = new javax.swing.JPanel();
+        jPanelAideGestionUtilisateur = new javax.swing.JPanel();
+        jPanelAideGestionJeux = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenuAccueil = new javax.swing.JMenu();
         jMenuGestionUnilan = new javax.swing.JMenu();
-        jMenuAideUtilisateurs = new javax.swing.JMenuItem();
-        jMenuItemGestionDesJeux = new javax.swing.JMenuItem();
-        jMenuItemGestionAdmin = new javax.swing.JMenuItem();
-        jMenuItemGestionAdhesion = new javax.swing.JMenuItem();
         jMenuGestionRedfox = new javax.swing.JMenu();
-        jMenuItemMatch = new javax.swing.JMenuItem();
-        jMenuItemGestionEquipe = new javax.swing.JMenuItem();
-        jMenuItemGestionRésultats = new javax.swing.JMenuItem();
         jMenuAlarmes = new javax.swing.JMenu();
-        jMenuAide = new javax.swing.JMenu();
 
         setTitle("Aide");
+        setMaximumSize(new java.awt.Dimension(2114444, 2114444));
+        setMinimumSize(null);
+
+        jPanelAccueilAide.setBackground(new java.awt.Color(102, 102, 102));
+
+        jPanelDescriptionAide.setBackground(new java.awt.Color(153, 153, 153));
+        jPanelDescriptionAide.setBorder(javax.swing.BorderFactory.createTitledBorder("Fenêtre d'aide a l'utilisation"));
+
+        jLabel1.setText("Bienvenue sur la fenêtre d'aide du logiciel :");
+
+        jLabel2.setText("- Vous trouverez ici des explications relatifs à chacune des fonctions présentes sur le logiciel ");
+
+        jLabel3.setText("Vous avez la possibilité a tout moment de revenir sur l'application en rebasculant la fenêtre.");
+
+        jLabel4.setText("- Pour trouver l'explication relative à votre interrogation sélectionner dans le menu la gestion associé");
+
+        javax.swing.GroupLayout jPanelDescriptionAideLayout = new javax.swing.GroupLayout(jPanelDescriptionAide);
+        jPanelDescriptionAide.setLayout(jPanelDescriptionAideLayout);
+        jPanelDescriptionAideLayout.setHorizontalGroup(
+            jPanelDescriptionAideLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelDescriptionAideLayout.createSequentialGroup()
+                .addGap(73, 73, 73)
+                .addGroup(jPanelDescriptionAideLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel4))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanelDescriptionAideLayout.setVerticalGroup(
+            jPanelDescriptionAideLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelDescriptionAideLayout.createSequentialGroup()
+                .addGap(108, 108, 108)
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel2)
+                .addGap(3, 3, 3)
+                .addComponent(jLabel4)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel3)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jTabbedPane1.addTab("tab1", jPanelDescriptionAide);
+
+        jPanelGesionUnilan.setBackground(new java.awt.Color(102, 102, 102));
+        jPanelGesionUnilan.setBorder(javax.swing.BorderFactory.createTitledBorder("Gestion de Unilan "));
+
+        jLabel5.setText("L'onglet gestion de Unilan permet via plusieurs sous-menu de gérer certaines données liées a la base de donnée :");
+
+        jLabel6.setText("- La gestion des utilisateurs ( Adhérents , Joueurs et Utilisateurs).");
+
+        jLabel7.setText("- La gestion des Jeux ");
+
+        jLabel8.setText("Permet l'ajout, la suppression et la modification des différentes informations relatives à ces utilisateurs.");
+
+        jLabel9.setText("Donne la possibilité d'ajouter de nouveaux jeux d'en supprimer mais aussi de modifier des jeux existants.");
+
+        jLabel10.setText("- Gestion des administrateurs ");
+
+        jLabel11.setText("Permet la gestion des statuts administrateurs en donnant la possibilités de les modifier d'en rajouter ou bien même de les supprimer.");
+
+        jLabel12.setText("- Gestion des adhésions");
+
+        jLabel13.setText("Utilisé pour la gestion des différents adhérents via un panel comprennant la midification, l'ajout ainsi que la suppression.");
+        jLabel13.setToolTipText("");
+
+        jButtonAideGestionUtilisateur.setBackground(new java.awt.Color(204, 204, 204));
+        jButtonAideGestionUtilisateur.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jButtonAideGestionUtilisateur.setText("Gestion utilisateur");
+
+        jButtonAideGestionAdmin.setBackground(new java.awt.Color(204, 204, 204));
+        jButtonAideGestionAdmin.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jButtonAideGestionAdmin.setText("Gestion des Administrateurs");
+
+        jButtonAideGestionJeux.setBackground(new java.awt.Color(204, 204, 204));
+        jButtonAideGestionJeux.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jButtonAideGestionJeux.setText("Gestion des Jeux");
+
+        jButtonAideAdhésions.setBackground(new java.awt.Color(204, 204, 204));
+        jButtonAideAdhésions.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jButtonAideAdhésions.setText("Gestion des Adhésions");
+
+        javax.swing.GroupLayout jPanelGesionUnilanLayout = new javax.swing.GroupLayout(jPanelGesionUnilan);
+        jPanelGesionUnilan.setLayout(jPanelGesionUnilanLayout);
+        jPanelGesionUnilanLayout.setHorizontalGroup(
+            jPanelGesionUnilanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelGesionUnilanLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelGesionUnilanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelGesionUnilanLayout.createSequentialGroup()
+                        .addGroup(jPanelGesionUnilanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel13)
+                            .addGroup(jPanelGesionUnilanLayout.createSequentialGroup()
+                                .addComponent(jLabel10)
+                                .addGap(323, 323, 323)
+                                .addComponent(jButtonAideGestionAdmin))
+                            .addComponent(jLabel9)
+                            .addGroup(jPanelGesionUnilanLayout.createSequentialGroup()
+                                .addGroup(jPanelGesionUnilanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel7)
+                                    .addComponent(jLabel6))
+                                .addGap(195, 195, 195)
+                                .addGroup(jPanelGesionUnilanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jButtonAideGestionUtilisateur)
+                                    .addComponent(jButtonAideGestionJeux)))
+                            .addComponent(jLabel8))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanelGesionUnilanLayout.createSequentialGroup()
+                        .addComponent(jLabel12)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButtonAideAdhésions)
+                        .addGap(23, 23, 23))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelGesionUnilanLayout.createSequentialGroup()
+                .addContainerGap(12, Short.MAX_VALUE)
+                .addComponent(jLabel11)
+                .addContainerGap())
+        );
+        jPanelGesionUnilanLayout.setVerticalGroup(
+            jPanelGesionUnilanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelGesionUnilanLayout.createSequentialGroup()
+                .addGap(47, 47, 47)
+                .addComponent(jLabel5)
+                .addGap(39, 39, 39)
+                .addGroup(jPanelGesionUnilanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(jButtonAideGestionUtilisateur))
+                .addGap(9, 9, 9)
+                .addComponent(jLabel8)
+                .addGap(40, 40, 40)
+                .addGroup(jPanelGesionUnilanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(jButtonAideGestionJeux))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel9)
+                .addGap(48, 48, 48)
+                .addGroup(jPanelGesionUnilanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(jButtonAideGestionAdmin))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel11)
+                .addGap(49, 49, 49)
+                .addGroup(jPanelGesionUnilanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel12)
+                    .addComponent(jButtonAideAdhésions))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel13)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jTabbedPane1.addTab("tab2", jPanelGesionUnilan);
+
+        jPanelGestionRedfox.setBorder(javax.swing.BorderFactory.createTitledBorder("Gestion de Redfox"));
+
+        javax.swing.GroupLayout jPanelGestionRedfoxLayout = new javax.swing.GroupLayout(jPanelGestionRedfox);
+        jPanelGestionRedfox.setLayout(jPanelGestionRedfoxLayout);
+        jPanelGestionRedfoxLayout.setHorizontalGroup(
+            jPanelGestionRedfoxLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 683, Short.MAX_VALUE)
+        );
+        jPanelGestionRedfoxLayout.setVerticalGroup(
+            jPanelGestionRedfoxLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 409, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("tab3", jPanelGestionRedfox);
+
+        jPanelGestionNotifications.setBorder(javax.swing.BorderFactory.createTitledBorder("Notifications"));
+
+        javax.swing.GroupLayout jPanelGestionNotificationsLayout = new javax.swing.GroupLayout(jPanelGestionNotifications);
+        jPanelGestionNotifications.setLayout(jPanelGestionNotificationsLayout);
+        jPanelGestionNotificationsLayout.setHorizontalGroup(
+            jPanelGestionNotificationsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanelGestionNotificationsLayout.setVerticalGroup(
+            jPanelGestionNotificationsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("tab4", jPanelGestionNotifications);
+
+        javax.swing.GroupLayout jPanelAideGestionUtilisateurLayout = new javax.swing.GroupLayout(jPanelAideGestionUtilisateur);
+        jPanelAideGestionUtilisateur.setLayout(jPanelAideGestionUtilisateurLayout);
+        jPanelAideGestionUtilisateurLayout.setHorizontalGroup(
+            jPanelAideGestionUtilisateurLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanelAideGestionUtilisateurLayout.setVerticalGroup(
+            jPanelAideGestionUtilisateurLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("tab5", jPanelAideGestionUtilisateur);
+
+        javax.swing.GroupLayout jPanelAideGestionJeuxLayout = new javax.swing.GroupLayout(jPanelAideGestionJeux);
+        jPanelAideGestionJeux.setLayout(jPanelAideGestionJeuxLayout);
+        jPanelAideGestionJeuxLayout.setHorizontalGroup(
+            jPanelAideGestionJeuxLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanelAideGestionJeuxLayout.setVerticalGroup(
+            jPanelAideGestionJeuxLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("tab6", jPanelAideGestionJeux);
 
         javax.swing.GroupLayout jPanelAccueilAideLayout = new javax.swing.GroupLayout(jPanelAccueilAide);
         jPanelAccueilAide.setLayout(jPanelAccueilAideLayout);
         jPanelAccueilAideLayout.setHorizontalGroup(
             jPanelAccueilAideLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 607, Short.MAX_VALUE)
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 670, Short.MAX_VALUE)
         );
         jPanelAccueilAideLayout.setVerticalGroup(
             jPanelAccueilAideLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 330, Short.MAX_VALUE)
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.TRAILING)
         );
 
         jMenuBar1.setBackground(new java.awt.Color(255, 102, 0));
         jMenuBar1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0), 2));
 
-        jMenuAccueil.setText("Accueil");
+        jMenuAccueil.setText("Menu principal");
         jMenuAccueil.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuAccueilRetourAccueil(evt);
@@ -72,74 +296,13 @@ public class Aide extends javax.swing.JFrame {
                 jMenuGestionUnilanActionPerformed(evt);
             }
         });
-
-        jMenuAideUtilisateurs.setText("Utilisateur");
-        jMenuGestionUnilan.add(jMenuAideUtilisateurs);
-
-        jMenuItemGestionDesJeux.setText("Gestion des Jeux");
-        jMenuItemGestionDesJeux.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jMenuItemGestionDesJeuxMouseClicked(evt);
-            }
-        });
-        jMenuItemGestionDesJeux.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItemGestionDesJeuxActionPerformed(evt);
-            }
-        });
-        jMenuGestionUnilan.add(jMenuItemGestionDesJeux);
-
-        jMenuItemGestionAdmin.setText("Gestion des Administrateurs");
-        jMenuItemGestionAdmin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItemGestionAdminActionPerformed(evt);
-            }
-        });
-        jMenuGestionUnilan.add(jMenuItemGestionAdmin);
-
-        jMenuItemGestionAdhesion.setText("Gestion des Adhésions");
-        jMenuItemGestionAdhesion.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItemGestionAdhesionActionPerformed(evt);
-            }
-        });
-        jMenuGestionUnilan.add(jMenuItemGestionAdhesion);
-
         jMenuBar1.add(jMenuGestionUnilan);
 
         jMenuGestionRedfox.setText("Gestion de Redfox");
-
-        jMenuItemMatch.setText("Gestion des Matchs");
-        jMenuItemMatch.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItemMatchActionPerformed(evt);
-            }
-        });
-        jMenuGestionRedfox.add(jMenuItemMatch);
-
-        jMenuItemGestionEquipe.setText("Gestion des Equipes");
-        jMenuItemGestionEquipe.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItemGestionEquipeActionPerformed(evt);
-            }
-        });
-        jMenuGestionRedfox.add(jMenuItemGestionEquipe);
-
-        jMenuItemGestionRésultats.setText("Gestion des Résultats");
-        jMenuItemGestionRésultats.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItemGestionRésultatsActionPerformed(evt);
-            }
-        });
-        jMenuGestionRedfox.add(jMenuItemGestionRésultats);
-
         jMenuBar1.add(jMenuGestionRedfox);
 
         jMenuAlarmes.setText("Notifications");
         jMenuBar1.add(jMenuAlarmes);
-
-        jMenuAide.setText("Aide");
-        jMenuBar1.add(jMenuAide);
 
         setJMenuBar(jMenuBar1);
 
@@ -147,21 +310,13 @@ public class Aide extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 627, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(jPanelAccueilAide, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addContainerGap()))
+            .addComponent(jPanelAccueilAide, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 352, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(jPanelAccueilAide, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addContainerGap()))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanelAccueilAide, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -173,40 +328,9 @@ public class Aide extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jMenuAccueilRetourAccueil
 
-    private void jMenuItemGestionDesJeuxMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenuItemGestionDesJeuxMouseClicked
-
-    }//GEN-LAST:event_jMenuItemGestionDesJeuxMouseClicked
-
-    private void jMenuItemGestionDesJeuxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemGestionDesJeuxActionPerformed
-
-     
-    }//GEN-LAST:event_jMenuItemGestionDesJeuxActionPerformed
-
-    private void jMenuItemGestionAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemGestionAdminActionPerformed
-
-       
-    }//GEN-LAST:event_jMenuItemGestionAdminActionPerformed
-
-    private void jMenuItemGestionAdhesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemGestionAdhesionActionPerformed
-       
-    }//GEN-LAST:event_jMenuItemGestionAdhesionActionPerformed
-
     private void jMenuGestionUnilanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuGestionUnilanActionPerformed
 
     }//GEN-LAST:event_jMenuGestionUnilanActionPerformed
-
-    private void jMenuItemMatchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemMatchActionPerformed
-
-        
-    }//GEN-LAST:event_jMenuItemMatchActionPerformed
-
-    private void jMenuItemGestionEquipeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemGestionEquipeActionPerformed
-    
-    }//GEN-LAST:event_jMenuItemGestionEquipeActionPerformed
-
-    private void jMenuItemGestionRésultatsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemGestionRésultatsActionPerformed
-        
-    }//GEN-LAST:event_jMenuItemGestionRésultatsActionPerformed
 
     /**
      * @param args the command line arguments
@@ -244,19 +368,35 @@ public class Aide extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButtonAideAdhésions;
+    private javax.swing.JButton jButtonAideGestionAdmin;
+    private javax.swing.JButton jButtonAideGestionJeux;
+    private javax.swing.JButton jButtonAideGestionUtilisateur;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenuAccueil;
-    private javax.swing.JMenu jMenuAide;
-    private javax.swing.JMenuItem jMenuAideUtilisateurs;
     private javax.swing.JMenu jMenuAlarmes;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenu jMenuGestionRedfox;
     private javax.swing.JMenu jMenuGestionUnilan;
-    private javax.swing.JMenuItem jMenuItemGestionAdhesion;
-    private javax.swing.JMenuItem jMenuItemGestionAdmin;
-    private javax.swing.JMenuItem jMenuItemGestionDesJeux;
-    private javax.swing.JMenuItem jMenuItemGestionEquipe;
-    private javax.swing.JMenuItem jMenuItemGestionRésultats;
-    private javax.swing.JMenuItem jMenuItemMatch;
     private javax.swing.JPanel jPanelAccueilAide;
+    private javax.swing.JPanel jPanelAideGestionJeux;
+    private javax.swing.JPanel jPanelAideGestionUtilisateur;
+    private javax.swing.JPanel jPanelDescriptionAide;
+    private javax.swing.JPanel jPanelGesionUnilan;
+    private javax.swing.JPanel jPanelGestionNotifications;
+    private javax.swing.JPanel jPanelGestionRedfox;
+    private javax.swing.JTabbedPane jTabbedPane1;
     // End of variables declaration//GEN-END:variables
 }
