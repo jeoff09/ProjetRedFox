@@ -5,9 +5,7 @@
  */
 package clientlourdredfox.ConnexionAccueil;
 
-import java.awt.BorderLayout;
-import javax.swing.JButton;
-import javax.swing.JFrame;
+
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.plaf.basic.BasicTabbedPaneUI;
@@ -52,6 +50,7 @@ public class Accueil extends javax.swing.JFrame {
         jButtonAccueilGestionMatch = new javax.swing.JButton();
         jButtonAccueilGestionJoueurs2 = new javax.swing.JButton();
         jButtonAccueilGestionUtilisateurs1 = new javax.swing.JButton();
+        jLabel30 = new javax.swing.JLabel();
         jPanelGestionDesjeux = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jListJeu = new javax.swing.JList();
@@ -71,8 +70,19 @@ public class Accueil extends javax.swing.JFrame {
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextAreaDescrptionJeuModifier = new javax.swing.JTextArea();
         jButtonModifierJeu = new javax.swing.JButton();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
         jPanelGestionJoueur = new javax.swing.JPanel();
         jTabbedPaneGestionJoueur = new javax.swing.JTabbedPane();
+        jPanelJoueurAjoutEquipe = new javax.swing.JPanel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jListUtilisateurFuturJoueur = new javax.swing.JList();
+        jScrollPane20 = new javax.swing.JScrollPane();
+        jListJoueurAjoutJoueur = new javax.swing.JList();
+        jButtonAjouterJoueurEquipe = new javax.swing.JButton();
+        jButtonEnleverJoueurEquipe = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jComboBoxListeEquipeJoueur = new javax.swing.JComboBox();
         jPanelConsulterJoueur = new javax.swing.JPanel();
         jScrollPane18 = new javax.swing.JScrollPane();
         jListJoueur = new javax.swing.JList();
@@ -80,15 +90,7 @@ public class Accueil extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jPanelJoueurAjoutEquipe = new javax.swing.JPanel();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        jListUtilisateurFuturJoueur = new javax.swing.JList();
-        jScrollPane20 = new javax.swing.JScrollPane();
-        jListJoueurAjoutJoueur = new javax.swing.JList();
-        jButtonAjouterJoueur = new javax.swing.JButton();
-        jButtonEnleverJoueurEquipe = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
-        jComboBoxListeEquipeJoueur = new javax.swing.JComboBox();
+        jLabel33 = new javax.swing.JLabel();
         jPanelGestionAdherent = new javax.swing.JPanel();
         jScrollPane10 = new javax.swing.JScrollPane();
         jListAdherent = new javax.swing.JList();
@@ -257,6 +259,7 @@ public class Accueil extends javax.swing.JFrame {
         jLabel90 = new javax.swing.JLabel();
         jTextFieldIdentifiantEquipe = new javax.swing.JTextField();
         jButtonAjouterResultat = new javax.swing.JButton();
+        jLabel108 = new javax.swing.JLabel();
         jPanelGestionDesEquipes = new javax.swing.JPanel();
         jScrollPane6 = new javax.swing.JScrollPane();
         jList2 = new javax.swing.JList();
@@ -268,7 +271,7 @@ public class Accueil extends javax.swing.JFrame {
         jTextFieldNomEquipe = new javax.swing.JTextField();
         jScrollPane7 = new javax.swing.JScrollPane();
         jTextAreaDescriptionEquipe = new javax.swing.JTextArea();
-        jButtonAjouterEquipe1 = new javax.swing.JButton();
+        jButtonAjouterEquipe = new javax.swing.JButton();
         jPanelModifierEquipe = new javax.swing.JPanel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
@@ -281,6 +284,7 @@ public class Accueil extends javax.swing.JFrame {
         jPanelSuppressionEquipe = new javax.swing.JPanel();
         jLabel19 = new javax.swing.JLabel();
         jButtonSupprimerEquipe = new javax.swing.JButton();
+        jLabel38 = new javax.swing.JLabel();
         jPanelGestionAdhesions = new javax.swing.JPanel();
         jScrollPane11 = new javax.swing.JScrollPane();
         jList5 = new javax.swing.JList();
@@ -355,6 +359,7 @@ public class Accueil extends javax.swing.JFrame {
         jTextAreaDescriptionAjoutMatch = new javax.swing.JTextArea();
         jLabel63 = new javax.swing.JLabel();
         jTextFieldTypeMatch = new javax.swing.JTextField();
+        jLabel107 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenuGestionUnilan = new javax.swing.JMenu();
         jMenuGestionDesUtilisateurs = new javax.swing.JMenu();
@@ -373,15 +378,16 @@ public class Accueil extends javax.swing.JFrame {
         jMenuAide = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Accueil\n");
+        setTitle("Gestion de l'association");
         setMaximumSize(new java.awt.Dimension(1200, 650));
         setMinimumSize(new java.awt.Dimension(100, 100));
-        setPreferredSize(new java.awt.Dimension(1300, 740));
+        setPreferredSize(new java.awt.Dimension(1250, 731));
         setResizable(false);
 
-        jPanelPrincipal.setBackground(new java.awt.Color(204, 204, 204));
+        jPanelPrincipal.setBackground(new java.awt.Color(13, 12, 12));
         jPanelPrincipal.setForeground(new java.awt.Color(255, 255, 255));
 
+        jButtonAccueilAffichageAdhérent.setBackground(new java.awt.Color(255, 102, 0));
         jButtonAccueilAffichageAdhérent.setText("Affichage des adhérents");
         jButtonAccueilAffichageAdhérent.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 102, 0)));
         jButtonAccueilAffichageAdhérent.addActionListener(new java.awt.event.ActionListener() {
@@ -398,6 +404,7 @@ public class Accueil extends javax.swing.JFrame {
         jLabelGestionRedFox.setForeground(new java.awt.Color(255, 153, 0));
         jLabelGestionRedFox.setText("Gestion de Redfox");
 
+        jButtonAccueilGestionResultats.setBackground(new java.awt.Color(255, 102, 0));
         jButtonAccueilGestionResultats.setText("Gestion des Résultats");
         jButtonAccueilGestionResultats.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 102, 0)));
         jButtonAccueilGestionResultats.addActionListener(new java.awt.event.ActionListener() {
@@ -406,6 +413,7 @@ public class Accueil extends javax.swing.JFrame {
             }
         });
 
+        jButtonAccueilGestionEquipe.setBackground(new java.awt.Color(255, 102, 0));
         jButtonAccueilGestionEquipe.setText("Gestion des Equipes");
         jButtonAccueilGestionEquipe.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 102, 0)));
         jButtonAccueilGestionEquipe.addActionListener(new java.awt.event.ActionListener() {
@@ -414,6 +422,7 @@ public class Accueil extends javax.swing.JFrame {
             }
         });
 
+        jButtonAccueilGestionMatch.setBackground(new java.awt.Color(255, 102, 0));
         jButtonAccueilGestionMatch.setText("Gestion des Matchs");
         jButtonAccueilGestionMatch.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 102, 0)));
         jButtonAccueilGestionMatch.addActionListener(new java.awt.event.ActionListener() {
@@ -422,6 +431,7 @@ public class Accueil extends javax.swing.JFrame {
             }
         });
 
+        jButtonAccueilGestionJoueurs2.setBackground(new java.awt.Color(255, 102, 0));
         jButtonAccueilGestionJoueurs2.setText("Gestion des joueurs");
         jButtonAccueilGestionJoueurs2.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 102, 0)));
         jButtonAccueilGestionJoueurs2.addActionListener(new java.awt.event.ActionListener() {
@@ -430,6 +440,7 @@ public class Accueil extends javax.swing.JFrame {
             }
         });
 
+        jButtonAccueilGestionUtilisateurs1.setBackground(new java.awt.Color(255, 102, 0));
         jButtonAccueilGestionUtilisateurs1.setText("Gestion des Utilisateurs");
         jButtonAccueilGestionUtilisateurs1.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 102, 0)));
         jButtonAccueilGestionUtilisateurs1.addActionListener(new java.awt.event.ActionListener() {
@@ -437,6 +448,8 @@ public class Accueil extends javax.swing.JFrame {
                 jButtonAccueilGestionUtilisateurs1ActionPerformed(evt);
             }
         });
+
+        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/logo.jpg"))); // NOI18N
 
         javax.swing.GroupLayout jPanelPrincipalLayout = new javax.swing.GroupLayout(jPanelPrincipal);
         jPanelPrincipal.setLayout(jPanelPrincipalLayout);
@@ -447,16 +460,18 @@ public class Accueil extends javax.swing.JFrame {
                 .addGroup(jPanelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanelPrincipalLayout.createSequentialGroup()
                         .addComponent(jLabelGestionUnilan)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 852, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(324, 324, 324)
                         .addComponent(jLabelGestionRedFox))
                     .addGroup(jPanelPrincipalLayout.createSequentialGroup()
                         .addGroup(jPanelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jButtonAccueilAffichageAdhérent, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButtonAccueilAffichageAdhérent, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 601, Short.MAX_VALUE)
                             .addComponent(jButtonAccueilGestionJoueurs2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButtonAccueilGestionUtilisateurs1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(79, 79, 79)
                         .addGroup(jPanelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButtonAccueilGestionResultats, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButtonAccueilGestionResultats, javax.swing.GroupLayout.DEFAULT_SIZE, 588, Short.MAX_VALUE)
                             .addComponent(jButtonAccueilGestionEquipe, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButtonAccueilGestionMatch, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addGap(68, 68, 68))
@@ -464,11 +479,16 @@ public class Accueil extends javax.swing.JFrame {
         jPanelPrincipalLayout.setVerticalGroup(
             jPanelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelPrincipalLayout.createSequentialGroup()
-                .addGap(32, 32, 32)
-                .addGroup(jPanelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelGestionUnilan)
-                    .addComponent(jLabelGestionRedFox))
-                .addGap(40, 40, 40)
+                .addGroup(jPanelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelPrincipalLayout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addGroup(jPanelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabelGestionUnilan)
+                            .addComponent(jLabelGestionRedFox)))
+                    .addGroup(jPanelPrincipalLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonAccueilAffichageAdhérent, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonAccueilGestionMatch, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -480,12 +500,12 @@ public class Accueil extends javax.swing.JFrame {
                 .addGroup(jPanelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonAccueilGestionResultats, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonAccueilGestionUtilisateurs1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(306, Short.MAX_VALUE))
+                .addContainerGap(241, Short.MAX_VALUE))
         );
 
         monTabbedPane.addTab("tab1", jPanelPrincipal);
 
-        jPanelGestionDesjeux.setBackground(new java.awt.Color(102, 102, 102));
+        jPanelGestionDesjeux.setBackground(new java.awt.Color(255, 255, 255));
 
         jListJeu.setModel(new javax.swing.AbstractListModel() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
@@ -614,6 +634,10 @@ public class Accueil extends javax.swing.JFrame {
                 .addComponent(jButtonModifierJeu))
         );
 
+        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/League_Of_Legends_by_DKman.png"))); // NOI18N
+
+        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/shoot_mania_storm_by_alchemist10-d747ian.png"))); // NOI18N
+
         javax.swing.GroupLayout jPanelGestionDesjeuxLayout = new javax.swing.GroupLayout(jPanelGestionDesjeux);
         jPanelGestionDesjeux.setLayout(jPanelGestionDesjeuxLayout);
         jPanelGestionDesjeuxLayout.setHorizontalGroup(
@@ -621,12 +645,16 @@ public class Accueil extends javax.swing.JFrame {
             .addGroup(jPanelGestionDesjeuxLayout.createSequentialGroup()
                 .addGap(85, 85, 85)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(108, 108, 108)
+                .addGap(48, 48, 48)
                 .addGroup(jPanelGestionDesjeuxLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanelModificationJeux, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanelAjoutJeu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanelSuppresionJeu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(42, 42, 42))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanelGestionDesjeuxLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel32)
+                    .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(314, Short.MAX_VALUE))
         );
         jPanelGestionDesjeuxLayout.setVerticalGroup(
             jPanelGestionDesjeuxLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -635,17 +663,97 @@ public class Accueil extends javax.swing.JFrame {
                 .addGroup(jPanelGestionDesjeuxLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane1)
                     .addGroup(jPanelGestionDesjeuxLayout.createSequentialGroup()
-                        .addComponent(jPanelModificationJeux, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 93, Short.MAX_VALUE)
-                        .addComponent(jPanelSuppresionJeu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 107, Short.MAX_VALUE)
-                        .addComponent(jPanelAjoutJeu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(109, 109, 109))
+                        .addGroup(jPanelGestionDesjeuxLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jPanelModificationJeux, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel31))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 132, Short.MAX_VALUE)
+                        .addGroup(jPanelGestionDesjeuxLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanelGestionDesjeuxLayout.createSequentialGroup()
+                                .addComponent(jPanelSuppresionJeu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 118, Short.MAX_VALUE)
+                                .addComponent(jPanelAjoutJeu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanelGestionDesjeuxLayout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(jLabel32)))))
+                .addGap(118, 118, 118))
         );
 
         monTabbedPane.addTab("tab2", jPanelGestionDesjeux);
 
-        jPanelGestionJoueur.setBackground(new java.awt.Color(51, 255, 153));
+        jPanelGestionJoueur.setBackground(new java.awt.Color(12, 12, 12));
+
+        jListUtilisateurFuturJoueur.setModel(new javax.swing.AbstractListModel() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public Object getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane4.setViewportView(jListUtilisateurFuturJoueur);
+
+        jListJoueurAjoutJoueur.setModel(new javax.swing.AbstractListModel() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public Object getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane20.setViewportView(jListJoueurAjoutJoueur);
+
+        jButtonAjouterJoueurEquipe.setText(">");
+        jButtonAjouterJoueurEquipe.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonAjouterJoueurEquipeActionPerformed(evt);
+            }
+        });
+
+        jButtonEnleverJoueurEquipe.setText("<");
+        jButtonEnleverJoueurEquipe.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonEnleverJoueurEquipeActionPerformed(evt);
+            }
+        });
+
+        jLabel3.setText("Nom equipe :");
+
+        jComboBoxListeEquipeJoueur.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        javax.swing.GroupLayout jPanelJoueurAjoutEquipeLayout = new javax.swing.GroupLayout(jPanelJoueurAjoutEquipe);
+        jPanelJoueurAjoutEquipe.setLayout(jPanelJoueurAjoutEquipeLayout);
+        jPanelJoueurAjoutEquipeLayout.setHorizontalGroup(
+            jPanelJoueurAjoutEquipeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelJoueurAjoutEquipeLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(103, 103, 103)
+                .addGroup(jPanelJoueurAjoutEquipeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButtonEnleverJoueurEquipe, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonAjouterJoueurEquipe, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 185, Short.MAX_VALUE)
+                .addGroup(jPanelJoueurAjoutEquipeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jScrollPane20)
+                    .addComponent(jLabel3)
+                    .addComponent(jComboBoxListeEquipeJoueur, 0, 170, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        jPanelJoueurAjoutEquipeLayout.setVerticalGroup(
+            jPanelJoueurAjoutEquipeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelJoueurAjoutEquipeLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel3)
+                .addGap(18, 18, 18)
+                .addComponent(jComboBoxListeEquipeJoueur, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
+                .addGroup(jPanelJoueurAjoutEquipeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelJoueurAjoutEquipeLayout.createSequentialGroup()
+                        .addComponent(jButtonAjouterJoueurEquipe, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(205, 205, 205)
+                        .addComponent(jButtonEnleverJoueurEquipe, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelJoueurAjoutEquipeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jScrollPane20, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(25, 25, 25))
+        );
+
+        jTabbedPaneGestionJoueur.addTab("Gestion des joueurs", jPanelJoueurAjoutEquipe);
+
+        jPanelConsulterJoueur.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jListJoueur.setModel(new javax.swing.AbstractListModel() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
@@ -696,92 +804,39 @@ public class Accueil extends javax.swing.JFrame {
                 .addComponent(jLabel9)
                 .addGap(29, 29, 29)
                 .addComponent(jLabel10)
-                .addContainerGap(207, Short.MAX_VALUE))
+                .addContainerGap(205, Short.MAX_VALUE))
         );
 
         jTabbedPaneGestionJoueur.addTab("Consulter un joueur", jPanelConsulterJoueur);
 
-        jListUtilisateurFuturJoueur.setModel(new javax.swing.AbstractListModel() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public Object getElementAt(int i) { return strings[i]; }
-        });
-        jScrollPane4.setViewportView(jListUtilisateurFuturJoueur);
-
-        jListJoueurAjoutJoueur.setModel(new javax.swing.AbstractListModel() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public Object getElementAt(int i) { return strings[i]; }
-        });
-        jScrollPane20.setViewportView(jListJoueurAjoutJoueur);
-
-        jButtonAjouterJoueur.setText(">");
-
-        jButtonEnleverJoueurEquipe.setText("<");
-
-        jLabel3.setText("Nom equipe :");
-
-        jComboBoxListeEquipeJoueur.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        javax.swing.GroupLayout jPanelJoueurAjoutEquipeLayout = new javax.swing.GroupLayout(jPanelJoueurAjoutEquipe);
-        jPanelJoueurAjoutEquipe.setLayout(jPanelJoueurAjoutEquipeLayout);
-        jPanelJoueurAjoutEquipeLayout.setHorizontalGroup(
-            jPanelJoueurAjoutEquipeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelJoueurAjoutEquipeLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(103, 103, 103)
-                .addGroup(jPanelJoueurAjoutEquipeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButtonEnleverJoueurEquipe, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonAjouterJoueur, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 116, Short.MAX_VALUE)
-                .addGroup(jPanelJoueurAjoutEquipeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jScrollPane20)
-                    .addComponent(jLabel3)
-                    .addComponent(jComboBoxListeEquipeJoueur, 0, 170, Short.MAX_VALUE))
-                .addContainerGap())
-        );
-        jPanelJoueurAjoutEquipeLayout.setVerticalGroup(
-            jPanelJoueurAjoutEquipeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelJoueurAjoutEquipeLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel3)
-                .addGap(18, 18, 18)
-                .addComponent(jComboBoxListeEquipeJoueur, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
-                .addGroup(jPanelJoueurAjoutEquipeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanelJoueurAjoutEquipeLayout.createSequentialGroup()
-                        .addComponent(jButtonAjouterJoueur, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(205, 205, 205)
-                        .addComponent(jButtonEnleverJoueurEquipe, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanelJoueurAjoutEquipeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jScrollPane20, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(25, 25, 25))
-        );
-
-        jTabbedPaneGestionJoueur.addTab("Gestion des joueurs", jPanelJoueurAjoutEquipe);
+        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/logo.jpg"))); // NOI18N
 
         javax.swing.GroupLayout jPanelGestionJoueurLayout = new javax.swing.GroupLayout(jPanelGestionJoueur);
         jPanelGestionJoueur.setLayout(jPanelGestionJoueurLayout);
         jPanelGestionJoueurLayout.setHorizontalGroup(
             jPanelGestionJoueurLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelGestionJoueurLayout.createSequentialGroup()
-                .addGap(289, 289, 289)
-                .addComponent(jTabbedPaneGestionJoueur, javax.swing.GroupLayout.PREFERRED_SIZE, 649, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(346, Short.MAX_VALUE))
+                .addGap(127, 127, 127)
+                .addComponent(jTabbedPaneGestionJoueur, javax.swing.GroupLayout.PREFERRED_SIZE, 718, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 330, Short.MAX_VALUE)
+                .addComponent(jLabel33)
+                .addContainerGap())
         );
         jPanelGestionJoueurLayout.setVerticalGroup(
             jPanelGestionJoueurLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelGestionJoueurLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel33)
+                .addGap(74, 74, 74))
             .addGroup(jPanelGestionJoueurLayout.createSequentialGroup()
-                .addGap(81, 81, 81)
-                .addComponent(jTabbedPaneGestionJoueur, javax.swing.GroupLayout.PREFERRED_SIZE, 425, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(270, Short.MAX_VALUE))
+                .addGap(69, 69, 69)
+                .addComponent(jTabbedPaneGestionJoueur, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(341, Short.MAX_VALUE))
         );
 
         monTabbedPane.addTab("tab3", jPanelGestionJoueur);
 
-        jPanelGestionAdherent.setBackground(new java.awt.Color(204, 0, 0));
+        jPanelGestionAdherent.setBackground(new java.awt.Color(255, 255, 255));
 
         jListAdherent.setModel(new javax.swing.AbstractListModel() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
@@ -993,15 +1048,15 @@ public class Accueil extends javax.swing.JFrame {
             jPanelGestionAdherentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelGestionAdherentLayout.createSequentialGroup()
                 .addGap(106, 106, 106)
-                .addGroup(jPanelGestionAdherentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jScrollPane10)
+                .addGroup(jPanelGestionAdherentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanelGestionAdherentLayout.createSequentialGroup()
                         .addComponent(jLabel34)
                         .addGap(18, 18, 18)
-                        .addComponent(jTextFieldRechercheAdherent, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(231, 231, 231)
+                        .addComponent(jTextFieldRechercheAdherent, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane10))
+                .addGap(57, 57, 57)
                 .addComponent(jPanelInformationAdherent, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(158, Short.MAX_VALUE))
+                .addContainerGap(464, Short.MAX_VALUE))
         );
         jPanelGestionAdherentLayout.setVerticalGroup(
             jPanelGestionAdherentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1033,6 +1088,11 @@ public class Accueil extends javax.swing.JFrame {
         jLabel11.setText("Code");
 
         jButtonAjouterAdministrateur.setText("Ajouter");
+        jButtonAjouterAdministrateur.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonAjouterAdministrateurActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanelAjoutAdminLayout = new javax.swing.GroupLayout(jPanelAjoutAdmin);
         jPanelAjoutAdmin.setLayout(jPanelAjoutAdminLayout);
@@ -1061,6 +1121,11 @@ public class Accueil extends javax.swing.JFrame {
         jPanel10.setBorder(javax.swing.BorderFactory.createTitledBorder("Supprimer un niveau administrateur"));
 
         jButtonSupprimerNiveauAdmin.setText("Supprimer");
+        jButtonSupprimerNiveauAdmin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonSupprimerNiveauAdminActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
@@ -1085,7 +1150,7 @@ public class Accueil extends javax.swing.JFrame {
             jPanelGestionAdministrateursLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelGestionAdministrateursLayout.createSequentialGroup()
                 .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 510, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 642, Short.MAX_VALUE)
                 .addGroup(jPanelGestionAdministrateursLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanelAjoutAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1093,7 +1158,7 @@ public class Accueil extends javax.swing.JFrame {
         );
         jPanelGestionAdministrateursLayout.setVerticalGroup(
             jPanelGestionAdministrateursLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 776, Short.MAX_VALUE)
+            .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 835, Short.MAX_VALUE)
             .addGroup(jPanelGestionAdministrateursLayout.createSequentialGroup()
                 .addGap(156, 156, 156)
                 .addComponent(jPanelAjoutAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1556,6 +1621,11 @@ public class Accueil extends javax.swing.JFrame {
         );
 
         jButtonAjouterUtilisateur.setText("Ajouter");
+        jButtonAjouterUtilisateur.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonAjouterUtilisateurActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanelAjoutUtilisateurLayout = new javax.swing.GroupLayout(jPanelAjoutUtilisateur);
         jPanelAjoutUtilisateur.setLayout(jPanelAjoutUtilisateurLayout);
@@ -1712,6 +1782,11 @@ public class Accueil extends javax.swing.JFrame {
         jLabel135.setText("Ville :");
 
         jButtonModifierUtilisateur.setText("Valider la modification");
+        jButtonModifierUtilisateur.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonModifierUtilisateurActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanelAdresseAjoutUtilisateur2Layout = new javax.swing.GroupLayout(jPanelAdresseAjoutUtilisateur2);
         jPanelAdresseAjoutUtilisateur2.setLayout(jPanelAdresseAjoutUtilisateur2Layout);
@@ -1763,6 +1838,11 @@ public class Accueil extends javax.swing.JFrame {
         jPanelSupprimerUtilisateur.setBorder(javax.swing.BorderFactory.createTitledBorder("Supprimer un utilisateur"));
 
         jButtonSupprimerUtilisateur.setText("Supprimer un utilisateur");
+        jButtonSupprimerUtilisateur.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonSupprimerUtilisateurActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanelSupprimerUtilisateurLayout = new javax.swing.GroupLayout(jPanelSupprimerUtilisateur);
         jPanelSupprimerUtilisateur.setLayout(jPanelSupprimerUtilisateurLayout);
@@ -1826,7 +1906,7 @@ public class Accueil extends javax.swing.JFrame {
                         .addComponent(jTextFieldRechercherUtilisateur, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanelGestionUtilisateurLayout.createSequentialGroup()
                         .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 113, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 245, Short.MAX_VALUE)
                         .addComponent(jTabbedPaneUtilisateur, javax.swing.GroupLayout.PREFERRED_SIZE, 875, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(43, 43, 43))
         );
@@ -1841,12 +1921,12 @@ public class Accueil extends javax.swing.JFrame {
                 .addGroup(jPanelGestionUtilisateurLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 508, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTabbedPaneUtilisateur, javax.swing.GroupLayout.PREFERRED_SIZE, 596, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(128, Short.MAX_VALUE))
+                .addContainerGap(187, Short.MAX_VALUE))
         );
 
         monTabbedPane.addTab("tab6", jPanelGestionUtilisateur);
 
-        jPanelGestionResultat.setBackground(new java.awt.Color(51, 153, 0));
+        jPanelGestionResultat.setBackground(new java.awt.Color(13, 14, 13));
 
         jList7.setModel(new javax.swing.AbstractListModel() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
@@ -1854,6 +1934,8 @@ public class Accueil extends javax.swing.JFrame {
             public Object getElementAt(int i) { return strings[i]; }
         });
         jScrollPane15.setViewportView(jList7);
+
+        jPanelInformationResultat.setBackground(new java.awt.Color(204, 102, 0));
 
         jLabel12.setText("Libelle :");
 
@@ -1938,6 +2020,8 @@ public class Accueil extends javax.swing.JFrame {
 
         jTabbedPane3.addTab("Information relatives aux résultats", jPanelInformationResultat);
 
+        jPanelAjoutResultat.setBackground(new java.awt.Color(204, 102, 0));
+
         jLabel85.setText("Libelle :");
 
         jLabel86.setText("Catégorie :");
@@ -1953,6 +2037,11 @@ public class Accueil extends javax.swing.JFrame {
         jLabel90.setText("Identifiant de l'équipe :");
 
         jButtonAjouterResultat.setText("Ajouter");
+        jButtonAjouterResultat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonAjouterResultatActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanelAjoutResultatLayout = new javax.swing.GroupLayout(jPanelAjoutResultat);
         jPanelAjoutResultat.setLayout(jPanelAjoutResultatLayout);
@@ -2012,16 +2101,20 @@ public class Accueil extends javax.swing.JFrame {
 
         jTabbedPane3.addTab("Ajouter un résultat", jPanelAjoutResultat);
 
+        jLabel108.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/logo.jpg"))); // NOI18N
+
         javax.swing.GroupLayout jPanelGestionResultatLayout = new javax.swing.GroupLayout(jPanelGestionResultat);
         jPanelGestionResultat.setLayout(jPanelGestionResultatLayout);
         jPanelGestionResultatLayout.setHorizontalGroup(
             jPanelGestionResultatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelGestionResultatLayout.createSequentialGroup()
-                .addGap(34, 34, 34)
+                .addGap(85, 85, 85)
                 .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(181, 181, 181)
+                .addGap(139, 139, 139)
                 .addComponent(jTabbedPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 623, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(280, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 162, Short.MAX_VALUE)
+                .addComponent(jLabel108)
+                .addContainerGap())
         );
         jPanelGestionResultatLayout.setVerticalGroup(
             jPanelGestionResultatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2030,13 +2123,18 @@ public class Accueil extends javax.swing.JFrame {
                 .addGroup(jPanelGestionResultatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jScrollPane15)
                     .addComponent(jTabbedPane3))
-                .addContainerGap(239, Short.MAX_VALUE))
+                .addContainerGap(298, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelGestionResultatLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel108)
+                .addGap(74, 74, 74))
         );
 
         monTabbedPane.addTab("tab7", jPanelGestionResultat);
 
-        jPanelGestionDesEquipes.setBackground(new java.awt.Color(255, 102, 0));
+        jPanelGestionDesEquipes.setBackground(new java.awt.Color(12, 12, 12));
 
+        jList2.setBackground(new java.awt.Color(204, 102, 0));
         jList2.setModel(new javax.swing.AbstractListModel() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
@@ -2059,7 +2157,12 @@ public class Accueil extends javax.swing.JFrame {
         jTextAreaDescriptionEquipe.setRows(5);
         jScrollPane7.setViewportView(jTextAreaDescriptionEquipe);
 
-        jButtonAjouterEquipe1.setText("Ajouter l'équipe");
+        jButtonAjouterEquipe.setText("Ajouter l'équipe");
+        jButtonAjouterEquipe.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonAjouterEquipeActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanelAjoutEquipeLayout = new javax.swing.GroupLayout(jPanelAjoutEquipe);
         jPanelAjoutEquipe.setLayout(jPanelAjoutEquipeLayout);
@@ -2083,7 +2186,7 @@ public class Accueil extends javax.swing.JFrame {
             .addGroup(jPanelAjoutEquipeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelAjoutEquipeLayout.createSequentialGroup()
                     .addContainerGap(425, Short.MAX_VALUE)
-                    .addComponent(jButtonAjouterEquipe1)
+                    .addComponent(jButtonAjouterEquipe)
                     .addGap(20, 20, 20)))
         );
         jPanelAjoutEquipeLayout.setVerticalGroup(
@@ -2103,7 +2206,7 @@ public class Accueil extends javax.swing.JFrame {
             .addGroup(jPanelAjoutEquipeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanelAjoutEquipeLayout.createSequentialGroup()
                     .addGap(47, 47, 47)
-                    .addComponent(jButtonAjouterEquipe1)
+                    .addComponent(jButtonAjouterEquipe)
                     .addContainerGap(74, Short.MAX_VALUE)))
         );
 
@@ -2123,6 +2226,11 @@ public class Accueil extends javax.swing.JFrame {
         jScrollPane8.setViewportView(jTextAreaModifierEquipeDescription);
 
         jButtonModifierEquipe.setText("Modifier l'équipe");
+        jButtonModifierEquipe.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonModifierEquipeActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanelModifierEquipeLayout = new javax.swing.GroupLayout(jPanelModifierEquipe);
         jPanelModifierEquipe.setLayout(jPanelModifierEquipeLayout);
@@ -2174,6 +2282,11 @@ public class Accueil extends javax.swing.JFrame {
         jLabel19.setText("Nom de l'équipe");
 
         jButtonSupprimerEquipe.setText("Supprimer l'équipe");
+        jButtonSupprimerEquipe.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonSupprimerEquipeActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanelSuppressionEquipeLayout = new javax.swing.GroupLayout(jPanelSuppressionEquipe);
         jPanelSuppressionEquipe.setLayout(jPanelSuppressionEquipeLayout);
@@ -2196,33 +2309,44 @@ public class Accueil extends javax.swing.JFrame {
                 .addGap(72, 72, 72))
         );
 
+        jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/logo.jpg"))); // NOI18N
+
         javax.swing.GroupLayout jPanelGestionDesEquipesLayout = new javax.swing.GroupLayout(jPanelGestionDesEquipes);
         jPanelGestionDesEquipes.setLayout(jPanelGestionDesEquipesLayout);
         jPanelGestionDesEquipesLayout.setHorizontalGroup(
             jPanelGestionDesEquipesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelGestionDesEquipesLayout.createSequentialGroup()
-                .addGap(247, 247, 247)
-                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(160, 160, 160)
+                .addGap(52, 52, 52)
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(73, 73, 73)
                 .addGroup(jPanelGestionDesEquipesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanelAjoutEquipe, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanelModifierEquipe, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanelSuppressionEquipe, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(0, 205, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 270, Short.MAX_VALUE)
+                .addComponent(jLabel38)
+                .addContainerGap())
         );
         jPanelGestionDesEquipesLayout.setVerticalGroup(
             jPanelGestionDesEquipesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelGestionDesEquipesLayout.createSequentialGroup()
                 .addGap(36, 36, 36)
-                .addGroup(jPanelGestionDesEquipesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jScrollPane6)
+                .addGroup(jPanelGestionDesEquipesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelGestionDesEquipesLayout.createSequentialGroup()
+                        .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 516, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())
                     .addGroup(jPanelGestionDesEquipesLayout.createSequentialGroup()
                         .addComponent(jPanelAjoutEquipe, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
+                        .addGap(66, 66, 66)
                         .addComponent(jPanelModifierEquipe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jPanelSuppressionEquipe, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(311, Short.MAX_VALUE))
+                        .addGroup(jPanelGestionDesEquipesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanelGestionDesEquipesLayout.createSequentialGroup()
+                                .addGap(57, 57, 57)
+                                .addComponent(jPanelSuppressionEquipe, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelGestionDesEquipesLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 124, Short.MAX_VALUE)
+                                .addComponent(jLabel38)
+                                .addGap(74, 74, 74))))))
         );
 
         monTabbedPane.addTab("tab8", jPanelGestionDesEquipes);
@@ -2354,6 +2478,11 @@ public class Accueil extends javax.swing.JFrame {
         jLabel106.setText("Type de paiement :");
 
         jButtonAjouterAdherent.setText("Ajouter");
+        jButtonAjouterAdherent.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonAjouterAdherentActionPerformed(evt);
+            }
+        });
 
         jRadioButtonPrixJoueur.setText("10 €");
 
@@ -2384,9 +2513,8 @@ public class Accueil extends javax.swing.JFrame {
                     .addGroup(jPanelAjouterUnAdherentLayout.createSequentialGroup()
                         .addGroup(jPanelAjouterUnAdherentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jFormattedTextFieldDateFinAdhesion, javax.swing.GroupLayout.DEFAULT_SIZE, 109, Short.MAX_VALUE)
-                            .addGroup(jPanelAjouterUnAdherentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jTextFieldTypePaiement, javax.swing.GroupLayout.DEFAULT_SIZE, 106, Short.MAX_VALUE)
-                                .addComponent(jTextFieldDonAssocie))
+                            .addComponent(jTextFieldTypePaiement, javax.swing.GroupLayout.DEFAULT_SIZE, 109, Short.MAX_VALUE)
+                            .addComponent(jTextFieldDonAssocie)
                             .addComponent(jFormattedTextFieldDateDebutAdhesion))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
                         .addComponent(jButtonAjouterAdherent, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2434,6 +2562,11 @@ public class Accueil extends javax.swing.JFrame {
         jScrollPane17.setViewportView(jList9);
 
         jButtonSupprimerAdherent.setText("Supprimer");
+        jButtonSupprimerAdherent.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonSupprimerAdherentActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanelSupprimerUnAdherentLayout = new javax.swing.GroupLayout(jPanelSupprimerUnAdherent);
         jPanelSupprimerUnAdherent.setLayout(jPanelSupprimerUnAdherentLayout);
@@ -2469,7 +2602,7 @@ public class Accueil extends javax.swing.JFrame {
                 .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(174, 174, 174)
                 .addComponent(jTabbedPaneGestionAdhesion, javax.swing.GroupLayout.PREFERRED_SIZE, 621, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(199, Short.MAX_VALUE))
+                .addContainerGap(331, Short.MAX_VALUE))
         );
         jPanelGestionAdhesionsLayout.setVerticalGroup(
             jPanelGestionAdhesionsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2478,12 +2611,14 @@ public class Accueil extends javax.swing.JFrame {
                 .addGroup(jPanelGestionAdhesionsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jTabbedPaneGestionAdhesion)
                     .addComponent(jScrollPane11))
-                .addContainerGap(298, Short.MAX_VALUE))
+                .addContainerGap(357, Short.MAX_VALUE))
         );
 
         monTabbedPane.addTab("tab9", jPanelGestionAdhesions);
 
-        jPanelGestionMatch.setBackground(new java.awt.Color(0, 153, 153));
+        jPanelGestionMatch.setBackground(new java.awt.Color(10, 10, 10));
+
+        jPanelConsulterMatch.setBackground(new java.awt.Color(204, 102, 0));
 
         jList6.setModel(new javax.swing.AbstractListModel() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
@@ -2618,6 +2753,8 @@ public class Accueil extends javax.swing.JFrame {
 
         jTabbedPaneGestionMatchs.addTab("Consulter les matchs", jPanelConsulterMatch);
 
+        jPanelAjouterMatch.setBackground(new java.awt.Color(204, 102, 0));
+
         jPanel6.setBackground(new java.awt.Color(204, 204, 204));
 
         jLabel59.setText("Nom de l'équipe 1 :");
@@ -2653,6 +2790,11 @@ public class Accueil extends javax.swing.JFrame {
 
         jButtonAjouterMatch.setText("Ajouter");
         jButtonAjouterMatch.setActionCommand("");
+        jButtonAjouterMatch.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonAjouterMatchActionPerformed(evt);
+            }
+        });
 
         jLabel58.setText("Type de match :");
 
@@ -2742,6 +2884,8 @@ public class Accueil extends javax.swing.JFrame {
 
         jTabbedPaneGestionMatchs.addTab("Ajouter un match", jPanelAjouterMatch);
 
+        jLabel107.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/logo.jpg"))); // NOI18N
+
         javax.swing.GroupLayout jPanelGestionMatchLayout = new javax.swing.GroupLayout(jPanelGestionMatch);
         jPanelGestionMatch.setLayout(jPanelGestionMatchLayout);
         jPanelGestionMatchLayout.setHorizontalGroup(
@@ -2749,14 +2893,20 @@ public class Accueil extends javax.swing.JFrame {
             .addGroup(jPanelGestionMatchLayout.createSequentialGroup()
                 .addGap(279, 279, 279)
                 .addComponent(jTabbedPaneGestionMatchs, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(308, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 199, Short.MAX_VALUE)
+                .addComponent(jLabel107)
+                .addContainerGap())
         );
         jPanelGestionMatchLayout.setVerticalGroup(
             jPanelGestionMatchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelGestionMatchLayout.createSequentialGroup()
                 .addGap(102, 102, 102)
                 .addComponent(jTabbedPaneGestionMatchs, javax.swing.GroupLayout.PREFERRED_SIZE, 473, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(260, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelGestionMatchLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel107)
+                .addGap(74, 74, 74))
         );
 
         monTabbedPane.addTab("tab10", jPanelGestionMatch);
@@ -2981,18 +3131,18 @@ public class Accueil extends javax.swing.JFrame {
       monTabbedPane.setSelectedIndex(0);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
+    
+    
     /* Gestion des Jeux */
-    
-    
     //Supprimer un jeu 
     private void jButtonSupprimerJeuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSupprimerJeuActionPerformed
       
-        Object[] options = {"Yes","No"};
+        Object[] options = {"Oui","Non"};
         int i = JOptionPane.showOptionDialog(null, "Confirmer la suppression ? ", "Attention",
         JOptionPane.OK_CANCEL_OPTION, JOptionPane.WARNING_MESSAGE,
         null, options, options[0]);
         
-        if (i == 1)
+        if (i == 0)// Si le bouton option oui est cochée 
         {
           // fonction DAO de suppression de jeux 
         }
@@ -3003,17 +3153,209 @@ public class Accueil extends javax.swing.JFrame {
         }
        
     }//GEN-LAST:event_jButtonSupprimerJeuActionPerformed
-        //Modifier un jeu
+    
+    
+    /*Gestion des jeux */ 
+    
+//Modifier un jeu
     private void jButtonModifierJeuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonModifierJeuActionPerformed
         
         
         
     }//GEN-LAST:event_jButtonModifierJeuActionPerformed
-        //Ajouter un jeu
+    //Ajouter un jeu
     private void jButtonAjouterJeuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAjouterJeuActionPerformed
-        // TODO add your handling code here:
+        
+        
     }//GEN-LAST:event_jButtonAjouterJeuActionPerformed
 
+    
+    
+    
+    /* Gestion Des JOUEURS */
+    
+    // Retirer un joueur d'une équipe 
+    private void jButtonEnleverJoueurEquipeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEnleverJoueurEquipeActionPerformed
+        Object[] options = {"Oui","Non"};
+        int i = JOptionPane.showOptionDialog(null, "Voulez-vous vraiment retirer se joueur ? ", "Attention",
+        JOptionPane.OK_CANCEL_OPTION, JOptionPane.WARNING_MESSAGE,
+        null, options, options[0]);
+        
+        if (i == 0)
+        {
+          // fonction de suppression d'un joueur d'une équipe
+        }
+        
+        else 
+        {
+            //retour 
+        }
+    }//GEN-LAST:event_jButtonEnleverJoueurEquipeActionPerformed
+    //Ajouter un joueur dans une équipe
+    private void jButtonAjouterJoueurEquipeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAjouterJoueurEquipeActionPerformed
+        
+        
+        
+    }//GEN-LAST:event_jButtonAjouterJoueurEquipeActionPerformed
+    
+    
+    
+    
+    
+    /* Gestion des niveaux d'administration */
+    
+    //Supprimer un niveau d'administration
+    private void jButtonSupprimerNiveauAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSupprimerNiveauAdminActionPerformed
+        Object[] options = {"Oui","Non"};
+        int i = JOptionPane.showOptionDialog(null, "Voulez-vous vraiment Supprimer se niveau ? ", "Attention",
+        JOptionPane.OK_CANCEL_OPTION, JOptionPane.WARNING_MESSAGE,
+        null, options, options[0]);
+        
+        if (i == 0)
+        {
+          // fonction de suppression d'un niveau 
+        }
+        
+        else 
+        {
+            //retour 
+        }
+    }//GEN-LAST:event_jButtonSupprimerNiveauAdminActionPerformed
+   //Ajouter un niveau d'administration
+    private void jButtonAjouterAdministrateurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAjouterAdministrateurActionPerformed
+       
+    }//GEN-LAST:event_jButtonAjouterAdministrateurActionPerformed
+
+    
+    
+    
+    /* Gestion des utilisateurs */
+    
+    // Supprimer un utilisateur
+    private void jButtonSupprimerUtilisateurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSupprimerUtilisateurActionPerformed
+        Object[] options = {"Oui","Non"};
+        int i = JOptionPane.showOptionDialog(null, "Voulez-vous vraiment supprimer cet utilisateur ? ", "Attention",
+        JOptionPane.OK_CANCEL_OPTION, JOptionPane.WARNING_MESSAGE,
+        null, options, options[0]);
+        
+        if (i == 0)
+        {
+          // fonction de suppression d'un utilisateur
+        }
+        
+        else 
+        {
+            //retour 
+        }
+    }//GEN-LAST:event_jButtonSupprimerUtilisateurActionPerformed
+        // Modifier un utilisateur
+    private void jButtonModifierUtilisateurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonModifierUtilisateurActionPerformed
+       
+        
+    }//GEN-LAST:event_jButtonModifierUtilisateurActionPerformed
+    // Ajouter un utilisateur
+    private void jButtonAjouterUtilisateurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAjouterUtilisateurActionPerformed
+       
+        
+        
+    }//GEN-LAST:event_jButtonAjouterUtilisateurActionPerformed
+
+    
+    
+    
+    
+    /* Gestion des résultats */
+    
+    // ajouter un resultat
+    private void jButtonAjouterResultatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAjouterResultatActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonAjouterResultatActionPerformed
+
+    
+    
+    
+    /* Gestion des équipes*/
+    
+    // supprimer un équipe
+    private void jButtonSupprimerEquipeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSupprimerEquipeActionPerformed
+         Object[] options = {"Oui","Non"};
+        int i = JOptionPane.showOptionDialog(null, "Voulez-vous vraiment supprimer cette équipe ? ", "Attention",
+        JOptionPane.OK_CANCEL_OPTION, JOptionPane.WARNING_MESSAGE,
+        null, options, options[0]);
+        
+        if (i == 0)
+        {
+          // fonction de suppression d'un utilisateur
+        }
+        
+        else 
+        {
+            //retour 
+        }
+    }//GEN-LAST:event_jButtonSupprimerEquipeActionPerformed
+    // Modifier un équipe
+    private void jButtonModifierEquipeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonModifierEquipeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonModifierEquipeActionPerformed
+    // Ajouter un équipe
+    private void jButtonAjouterEquipeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAjouterEquipeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonAjouterEquipeActionPerformed
+
+    
+    
+    
+    /* Gestion des adhérents*/
+    
+    // supprimer les adhérents
+    private void jButtonSupprimerAdherentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSupprimerAdherentActionPerformed
+         Object[] options = {"Oui","Non"};
+        int i = JOptionPane.showOptionDialog(null, "Voulez-vous vraiment supprimer cet adhérent ? ", "Attention",
+        JOptionPane.OK_CANCEL_OPTION, JOptionPane.WARNING_MESSAGE,
+        null, options, options[0]);
+        
+        if (i == 0)
+        {
+          // fonction de suppression d'un utilisateur
+        }
+        
+        else 
+        {
+            //retour 
+        }
+    }//GEN-LAST:event_jButtonSupprimerAdherentActionPerformed
+    // Ajouter un adhérent
+    private void jButtonAjouterAdherentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAjouterAdherentActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonAjouterAdherentActionPerformed
+
+    
+    /*Gestion des matchs*/ 
+    
+    // AJouter des matchs
+    private void jButtonAjouterMatchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAjouterMatchActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonAjouterMatchActionPerformed
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * @param args the command line arguments
      */
@@ -3058,9 +3400,9 @@ public class Accueil extends javax.swing.JFrame {
     private javax.swing.JButton jButtonAccueilGestionUtilisateurs1;
     private javax.swing.JButton jButtonAjouterAdherent;
     private javax.swing.JButton jButtonAjouterAdministrateur;
-    private javax.swing.JButton jButtonAjouterEquipe1;
+    private javax.swing.JButton jButtonAjouterEquipe;
     private javax.swing.JButton jButtonAjouterJeu;
-    private javax.swing.JButton jButtonAjouterJoueur;
+    private javax.swing.JButton jButtonAjouterJoueurEquipe;
     private javax.swing.JButton jButtonAjouterMatch;
     private javax.swing.JButton jButtonAjouterResultat;
     private javax.swing.JButton jButtonAjouterUtilisateur;
@@ -3094,6 +3436,8 @@ public class Accueil extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel104;
     private javax.swing.JLabel jLabel105;
     private javax.swing.JLabel jLabel106;
+    private javax.swing.JLabel jLabel107;
+    private javax.swing.JLabel jLabel108;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel114;
     private javax.swing.JLabel jLabel115;
@@ -3149,6 +3493,7 @@ public class Accueil extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
@@ -3252,7 +3597,6 @@ public class Accueil extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
-    private javax.swing.JPanel jPanelAdresse;
     private javax.swing.JPanel jPanelAdresseAjoutUtilisateur;
     private javax.swing.JPanel jPanelAdresseAjoutUtilisateur1;
     private javax.swing.JPanel jPanelAdresseAjoutUtilisateur2;
@@ -3345,7 +3689,6 @@ public class Accueil extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldCOnsulterEmailUtilisateur;
     private javax.swing.JTextField jTextFieldCategorieResultat;
     private javax.swing.JTextField jTextFieldClassementResultat;
-    private javax.swing.JTextField jTextFieldCodePostalAdresse;
     private javax.swing.JTextField jTextFieldCodePostalAdresseUtilisateur;
     private javax.swing.JTextField jTextFieldCodePostalAdresseUtilisateur1;
     private javax.swing.JTextField jTextFieldConsulterNomRueAdresse;
@@ -3370,7 +3713,6 @@ public class Accueil extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldNomJeu;
     private javax.swing.JTextField jTextFieldNomRueAdresse;
     private javax.swing.JTextField jTextFieldNomRueAdresse1;
-    private javax.swing.JTextField jTextFieldNumRueAdresse;
     private javax.swing.JTextField jTextFieldNumeroFixeUtilisateur;
     private javax.swing.JTextField jTextFieldNumeroFixeUtilisateur1;
     private javax.swing.JTextField jTextFieldNumeroMobileUtilisateur;
@@ -3381,10 +3723,8 @@ public class Accueil extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldPrenom1;
     private javax.swing.JTextField jTextFieldRechercheAdherent;
     private javax.swing.JTextField jTextFieldRechercherUtilisateur;
-    private javax.swing.JTextField jTextFieldRueAdresse;
     private javax.swing.JTextField jTextFieldTypeMatch;
     private javax.swing.JTextField jTextFieldTypePaiement;
-    private javax.swing.JTextField jTextFieldVilleAdresse;
     private javax.swing.JTextField jTextFieldVilleAdresseJoueur;
     private javax.swing.JTextField jTextFieldVilleAdresseJoueur1;
     private javax.swing.JTabbedPane monTabbedPane;
