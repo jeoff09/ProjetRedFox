@@ -5,7 +5,7 @@
  */
 package Entite;
 
-import java.math.BigInteger;
+import java.sql.Timestamp;
 import java.util.Date;
 
 /**
@@ -17,7 +17,7 @@ public class Match {
     protected int match_id;
     private String match_lib_equ1;
     private String match_lib_equ2;
-    private Date   match_date;
+    private Timestamp   match_date;
     private String match_res_equ1;
     private String match_res_equ2;
     private String match_type;
@@ -40,11 +40,11 @@ public class Match {
         this.match_lib_equ2 = match_lib_equ2;
     }
 
-    public Date getMatch_date() {
+    public Timestamp getMatch_date() {
         return match_date;
     }
 
-    public void setMatch_date(Date match_date) {
+    public void setMatch_date(Timestamp match_date) {
         this.match_date = match_date;
     }
 
@@ -96,7 +96,7 @@ public class Match {
         this.match_id = match_id;
     }
 
-    public Match(String match_lib_equ1, String match_lib_equ2, Date match_date, String match_res_equ1, String match_res_equ2, String match_type, String match_info_tn, Equipe equipe_id) {
+    public Match(String match_lib_equ1, String match_lib_equ2, Timestamp match_date, String match_res_equ1, String match_res_equ2, String match_type, String match_info_tn, Equipe equipe_id) {
         this.match_lib_equ1 = match_lib_equ1;
         this.match_lib_equ2 = match_lib_equ2;
         this.match_date = match_date;
@@ -106,6 +106,9 @@ public class Match {
         this.match_info_tn = match_info_tn;
         this.equipe_id = equipe_id;
     }
+
+    
+    
     
     
     

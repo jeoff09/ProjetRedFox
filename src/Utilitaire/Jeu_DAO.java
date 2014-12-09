@@ -165,5 +165,49 @@ public class Jeu_DAO {
     }
 return listJeu;
 }
+    
+    public static Jeu TrouverJeu(Connection connection,int Identifiant )
+{
+    Jeu jeu = null;
+    Statement stat = null;
+    
+    try
+    { 
+        stat = connection.createStatement();
+        ResultSet res = stat.executeQuery("Select Jeux_id,Jeux_lib,Jeux_desc,Jeux_img,Medias_Med_id From jeux Where Jeux_id ='" + Identifiant + "';");
+        if (res.next())
+        {
+            long id = res.getInt("Id");
+            
+            String jeuLib = res.getString("Jeux_lib");
+            String jeuDesc = res.getString("Jeux_desc");
+            String jeuImg = res.getString("Jeux_img");            
+            int IdMedia = res.getInt("Medias_Med_id");
+            int idjeux = res.getInt("Jeux_id");
+            
+          
+            
+            jeu = new Jeu(jeuLib);
+            jeu.jeu_desc = jeuDesc;
+            jeu.jeu_img = jeuImg ;
+            
+        }
+        
+        
+    }catch(Exception ex){ex.printStackTrace();}
+    finally
+    {
+        if(stat != null)
+        {
+            try{
+                
+                stat.close();
+               
+            }catch(SQLException ex){}
+        }
+    }
+ return jeu;
+}
+     
      
 }
