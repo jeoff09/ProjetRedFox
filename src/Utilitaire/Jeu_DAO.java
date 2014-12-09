@@ -130,7 +130,7 @@ public class Jeu_DAO {
         
     while(rs.next())
             {
-//                BigInteger id = rs.getInt("Jeux_id");
+                int id = rs.getInt("Jeux_id");
                 String jeu_lib = rs.getString("Jeux_lib");
                 String jeu_Desc = rs.getString("Jeux_desc");
                 String jeu_img = rs.getString("Jeux_img");

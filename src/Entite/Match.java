@@ -14,7 +14,7 @@ import java.util.Date;
  */
 public class Match {
     
-    protected BigInteger match_id;
+    protected int match_id;
     private String match_lib_equ1;
     private String match_lib_equ2;
     private Date   match_date;
@@ -86,6 +86,14 @@ public class Match {
 
     public void setEquipe_id(Equipe equipe_id) {
         this.equipe_id = equipe_id;
+    }
+
+    public int getMatch_id() {
+        return match_id;
+    }
+
+    public void setMatch_id(int match_id) {
+        this.match_id = match_id;
     }
 
     public Match(String match_lib_equ1, String match_lib_equ2, Date match_date, String match_res_equ1, String match_res_equ2, String match_type, String match_info_tn, Equipe equipe_id) {

@@ -32,14 +32,14 @@ public class Adresse_DAO {
           + adresse.getAdr_num()+ "', "
           + adresse.getAdr_rue()+",'"
           + adresse.getAdr_CP()+"'," 
-          + adresse.getAdr_ville()+" )");
+          + adresse.getAdr_ville()+")");
         
      ResultSet res =  stmt.executeQuery("SELECT MAX(id) FROM adresse");
        if(res.next())
        {
            
-           //BigInteger id = res.getbi(1);
-           //adresse.setAdr_id(id);
+           int id = res.getInt(1);
+           adresse.setAdr_id(id);
        }
         
      

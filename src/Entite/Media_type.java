@@ -13,7 +13,7 @@ import java.math.BigInteger;
  */
 public class Media_type {
     
-    protected BigInteger media_type_id;
+    protected int media_type_id;
     private String lib_type_media ;
 
     public String getLib_type_media() {
@@ -26,6 +26,14 @@ public class Media_type {
 
     public Media_type(String lib_type_media) {
         this.lib_type_media = lib_type_media;
+    }
+
+    public int getMedia_type_id() {
+        return media_type_id;
+    }
+
+    public void setMedia_type_id(int media_type_id) {
+        this.media_type_id = media_type_id;
     }
     
     

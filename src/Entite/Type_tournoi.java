@@ -13,14 +13,14 @@ import java.math.BigInteger;
  */
 public class Type_tournoi {
     
-    protected BigInteger type_tournoi_id;
+    protected int type_tournoi_id;
     private String typ_tn_lib;
 
-    public BigInteger getType_tournoi_id() {
+    public int getType_tournoi_id() {
         return type_tournoi_id;
     }
 
-    public void setType_tournoi_id(BigInteger type_tournoi_id) {
+    public void setType_tournoi_id(int type_tournoi_id) {
         this.type_tournoi_id = type_tournoi_id;
     }
 

@@ -14,16 +14,16 @@ import java.math.BigInteger;
  */
 public class Jeu {
     
-    protected BigInteger jeu_id;
+    protected int jeu_id;
     public String jeu_lib;
     public String jeu_desc;
     public String jeu_img;
 
-    public BigInteger getJeu_id() {
+    public int getJeu_id() {
         return jeu_id;
     }
 
-    public void setJeu_id(BigInteger jeu_id) {
+    public void setJeu_id(int jeu_id) {
         this.jeu_id = jeu_id;
     }
 

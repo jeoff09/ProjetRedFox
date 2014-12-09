@@ -15,7 +15,7 @@ import java.util.Date;
 public class Resultat {
     
     
-    protected BigInteger res_id;
+    protected int res_id;
     private Date res_date;
     private String res_lib;
     private String res_cat;
@@ -24,11 +24,11 @@ public class Resultat {
     private Type_tournoi type_tournoi_id;
     private Equipe equipe_id;
 
-    public BigInteger getRes_id() {
+    public int getRes_id() {
         return res_id;
     }
 
-    public void setRes_id(BigInteger res_id) {
+    public void setRes_id(int res_id) {
         this.res_id = res_id;
     }
 

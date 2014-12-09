@@ -5,7 +5,7 @@
  */
 package Entite;
 
-import java.math.BigInteger;
+
 
 /**
  *
@@ -13,17 +13,17 @@ import java.math.BigInteger;
  */
 public class Adresse {
     
-    protected BigInteger adr_id;
+    protected int adr_id;
     private int adr_num ;
     private String adr_rue;
     private String adr_CP;
     private String adr_ville;
 
-    public BigInteger getAdr_id() {
+    public int getAdr_id() {
         return adr_id;
     }
 
-    public void setAdr_id(BigInteger adr_id) {
+    public void setAdr_id(int adr_id) {
         this.adr_id = adr_id;
     }
 

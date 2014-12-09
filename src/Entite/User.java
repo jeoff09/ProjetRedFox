@@ -14,7 +14,7 @@ import java.util.Date;
  */
 public class User {
     
-    protected BigInteger user_id;
+    protected int user_id;
     private String user_pseudo;
     private String user_email;
     private String user_password;
@@ -29,11 +29,11 @@ public class User {
     private Media user_media_id;
     private Adresse user_adresse_id;
 
-    public BigInteger getUser_id() {
+    public int getUser_id() {
         return user_id;
     }
 
-    public void setUser_id(BigInteger user_id) {
+    public void setUser_id(int user_id) {
         this.user_id = user_id;
     }
 

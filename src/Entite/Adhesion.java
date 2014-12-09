@@ -15,7 +15,7 @@ import java.security.Timestamp;
  */
 public class Adhesion {
     
-    protected BigInteger adh_id;
+    protected int adh_id;
     private Timestamp adh_dat_sign ; 
     private Timestamp adh_dat_fin ; 
     private int adh_prix;
@@ -23,11 +23,11 @@ public class Adhesion {
     private String adh_type_paiement;
     private User user ;
 
-    public BigInteger getAdh_id() {
+    public int getAdh_id() {
         return adh_id;
     }
 
-    public void setAdh_id(BigInteger adh_id) {
+    public void setAdh_id(int adh_id) {
         this.adh_id = adh_id;
     }
 

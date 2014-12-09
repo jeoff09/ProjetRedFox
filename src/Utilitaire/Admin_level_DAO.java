@@ -27,7 +27,7 @@ public class Admin_level_DAO {
     stmt = connection.createStatement();
         
         
-  stmt.executeUpdate("Insert Into admin_level(adm_cod) Values('"
+  stmt.executeUpdate("Insert Into admin_level(Adm_cod) Values('"
           + admin_code +"');");
   
         

@@ -39,8 +39,8 @@ public class Resultat_DAO {
        if(res.next())
        {
            
-//           long id = res.getLong(1);
-//           resultat.getEquipe_id(id);
+           int id = res.getInt(1);
+           resultat.setRes_id(id);
        }
         
                 

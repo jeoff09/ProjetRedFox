@@ -18,8 +18,7 @@ import java.sql.Statement;
 public class Adhesion_DAO {
     
     
-    
-    // Problème Biginteger
+
     public static void CreerAdhesion(Adhesion adhesion,Connection connection )
 {
     
@@ -34,14 +33,14 @@ public class Adhesion_DAO {
           + adhesion.getAdh_dat_fin()+",'"
           + adhesion.getAdh_prix()+"'," 
           + adhesion.getAdh_don()+" ',"
-          + adhesion.getUser()+" )"
+          + adhesion.getUser().getUser_id()+" )"
           + adhesion.getAdh_type_paiement()+" )");
      ResultSet res =  stmt.executeQuery("SELECT MAX(Adh_id) FROM adhesions");
        if(res.next())
        {
            
-//           long id = res.getLong(1);
-//           adhesion.setAdh_id(id);
+         int id = res.getInt(1);
+         adhesion.setAdh_id(id);
        }
         
                 
@@ -67,7 +66,7 @@ public class Adhesion_DAO {
 }
     
     
-    public static void DeleteAdhésion(Adhesion adhesion,Connection connection )
+    public static void DeleteAdhesion(Adhesion adhesion,Connection connection )
 {
       Statement stmt = null;
      try

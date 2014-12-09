@@ -13,17 +13,17 @@ import java.math.BigInteger;
  */
 public class Equipe {
     
-    protected BigInteger equ_id;
+    protected int equ_id;
     private String  equ_lib;
     private String equ_desc;
     private Jeu      jeu_id;
     private Media  media_id;
 
-    public BigInteger getEqu_id() {
+    public int getEqu_id() {
         return equ_id;
     }
 
-    public void setEqu_id(BigInteger equ_id) {
+    public void setEqu_id(int equ_id) {
         this.equ_id = equ_id;
     }
 
